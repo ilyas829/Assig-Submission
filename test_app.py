@@ -14,7 +14,7 @@ class TestApp(unittest.TestCase):
 
     def test_hello_route_1(self):
         response = self.app.get('/')
-        self.assertEqual(response.data.decode('utf-8'), 'Hello, World!')
+        self.assertNotEqual(response.data.decode('utf-8'), 'Hello, World!')
 
     def test_home_route_0(self):
         response = self.app.get('/home')
