@@ -11,7 +11,7 @@
 
 Web Application and CI/CD Pipeline
 Introduction
-This repository contains a simple web application built using Flask for Python. Additionally, it includes a GitHub Actions CI/CD pipeline for automating testing and deployment to Azure App Service. This README provides detailed instructions on how to run the application locally and an overview of the CI/CD pipeline setup.
+This repository contains a simple web application built using Flask for Python. Additionally, it includes a GitHub Actions CI/CD pipeline for automating testing and deployment to Azure App Service. This README provides detailed instructions on how to run the application locally and an overview of the CI/CD pipeline setup.<br>
 
 Running the Application Locally
 To run the web application locally, follow these steps:
@@ -39,17 +39,17 @@ Pipeline Steps
 Test: This job runs on every push to the main branch. It sets up a Python environment, installs dependencies, and runs unit tests using unittest. It sets the FLASK_ENV environment variable to testing to ensure the application runs in testing mode.
 Deploy: This job runs after the test job succeeds. It deploys the application to Azure App Service using the Azure Web Apps Deploy GitHub Action. It only runs if the previous job succeeds (if: success()).
 Tool Choices
-Flask: Chosen for its simplicity and flexibility in building web applications with Python.
-unittest: Standard Python unit testing framework for writing and executing tests.
-GitHub Actions: Used for CI/CD automation due to its tight integration with GitHub repositories and ease of use.
-Azure Web Apps: Chosen as a free-tier cloud service for deploying the web application due to its ease of use and integration with GitHub Actions.
+Flask: Chosen for its simplicity and flexibility in building web applications with Python.<br>
+unittest: Standard Python unit testing framework for writing and executing tests.<br>
+GitHub Actions: Used for CI/CD automation due to its tight integration with GitHub repositories and ease of use.<br>
+Azure Web Apps: Chosen as a free-tier cloud service for deploying the web application due to its ease of use and integration with GitHub Actions.<br>
 Scaling for Larger Applications
 The setup described in this repository can be scaled for larger applications with some modifications:
 
 Infrastructure as Code (IaC): Implement IaC tools like Terraform or ARM templates to manage infrastructure provisioning. This ensures consistency and scalability as your application grows.
 Containerization: Containerize your application using Docker. This allows for easier deployment and scaling of services, especially in a microservices architecture.
 Integration Tests: Incorporate integration tests into your CI/CD pipeline to validate the interaction between different components of your application.
-Deployment Strategies: Explore different deployment strategies like blue-green deployments or canary releases to minimize downtime and risk during deployments.
+Deployment Strategies: Explore different deployment strategies like blue-green deployments or canary releases to minimize downtime and risk during deployments.<br>
 Conclusion
 The provided web application and CI/CD pipeline offer a basic foundation for automating the testing and deployment process. By following the instructions in this README and understanding the CI/CD process, you can efficiently manage and deploy your web applications with confidence..
 
