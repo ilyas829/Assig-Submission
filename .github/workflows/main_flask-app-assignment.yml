@@ -33,7 +33,7 @@ jobs:
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Run tests
         run: |
-          python -m unittest discover -s tests -p '*_test.py'
+          python -m unittest test_app.py
         env:
           FLASK_ENV: testing
 
